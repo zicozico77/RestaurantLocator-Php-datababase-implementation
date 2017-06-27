@@ -1,0 +1,74 @@
+<!--add_deal_page.html 
+This html file contains the form that owners of restaurant must fill to add a new deal into the database.
+Once they have submitted the form, they are redirected to the account page and the new deal should appear in the Current Deals section.
+-->
+<!DOCTYPE html>
+<html class="no-js" lang="en" dir="ltr">
+ <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YUMdeal - Account</title>
+    <link href="https://fonts.googleapis.com/css?family=Rammetto+One|Yanone+Kaffeesatz:700" rel="stylesheet">
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/style.css">
+ </head>
+        <header class="header">
+        <div>
+            <a href="index.html"><h1 id='heading1'>YUM</h1><h1 id='heading2'>deal</h1></a>
+       </div>
+         <ul class="topnav" id ="myTopnav">
+            <li class='head'><a href="http://www.twitter.com" target="_blank" id="socialGap" title='Twitter'><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <a href="http://www.facebook.com" target="_blank" id="socialGap" title='Facebook'><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a href="http://www.instagram.com" id="socialGap" title='Instagram'><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            <a>|</a></li>
+            <li class='head'>
+            <section class="logout">
+            <a href="logout.php" id='colorChange' >Log out</a>
+            </section>
+             </li>            
+             <li class='head'><a href="about.html" id="colorChange">About Us</a></li>  
+        </ul>
+    </header>
+
+<body>
+
+
+
+    <div class="row">
+      <div class="small-4 large-8 columns">
+
+
+		<section id="add_deal_page">
+		<!--content of the registration page-->
+			<h3>Add a new deal for your business</h3>
+			<p>Please fill in the description of the deal</p>
+			<form action="add_deal_page.php" method="post">
+				<label for="description"></label><textarea name="description" id="description"></textarea><br />
+				<div class="row">
+      			<div class="">
+				<label for="start_date">Start Date<input type="date" name="start_date" id="start_date"/></label>
+				<label for="end_date">End Date<input type="date" name="end_date" id="end_date"/></label>
+				</div>
+				</div>
+				
+				 <br /><br />
+				
+
+				<input type="submit" class="button" value="Add deal" />
+			</form>
+
+			<a href="account_page.php">Back</a>
+
+		</section>
+
+		
+	</div>
+
+	<script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

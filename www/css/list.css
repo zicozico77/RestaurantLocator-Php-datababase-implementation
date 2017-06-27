@@ -1,0 +1,13 @@
+.list-radius-label{
+	font-size: 1.5em;
+}
+.list-radius-label h4{
+	margin-left: 0;
+}
+
+.list-table, .list-table th, .list-table td{
+	border:1px solid black;
+}
+#radius{
+	float: none;
+}

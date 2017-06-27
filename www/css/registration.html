@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en" dir="ltr">
+ <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YUMdeal - Registration</title>
+     
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- JQuery UI -->
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+     
+    <script src="js/index.js"></script>
+    <script src="js/style.js"></script>
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script src="js/app.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBRRY9GzkL0XCgOBE09OoXDLAoog1MDAa8&libraries=places&callback=initAutocomplete" async defer></script>
+    <link href="https://fonts.googleapis.com/css?family=Rammetto+One|Yanone+Kaffeesatz:700" rel="stylesheet">
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <link rel="stylesheet" href="css/google.css">
+    <link rel="stylesheet" href="css/loginmenu.css">
+ </head>
+
+<body>
+<header class="header">
+        <div>
+            <a href="index.html"><h1 id='heading1'>YUM</h1><h1 id='heading2'>deal</h1></a>
+       </div>
+         <ul class="topnav" id ="myTopnav">
+            <li class='head'><a href="http://www.twitter.com" target="_blank" id="socialGap" title='Twitter'><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <a href="http://www.facebook.com" target="_blank" id="socialGap" title='Facebook'><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a href="http://www.instagram.com" id="socialGap" title='Instagram'><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            <a>|</a></li>
+            <li class='head'>
+                <nav>
+                  <ul>
+                    <li id="login">
+                      <a id="login-trigger" href="#">
+                        Log in
+                      </a>
+                      <div id="login-content">
+                        <form action="login.php" method="post">
+                          <fieldset id="inputs">
+                            <input id="user_name" type="text" name="user_name" placeholder="Your username" required>
+                            <input id="password" type="password" name="password" placeholder="Password" required>
+                          </fieldset>
+                          <fieldset id="actions">
+                            <input type="submit" id="submit" class='button' value="Submit">
+                          </fieldset>
+                        </form>
+                      </div>                     
+                    </li>
+                  </ul>
+                </nav>
+             </li>            
+             <li class='head'><a href="about.html" id="colorChange">About Us</a></li>  
+        </ul>
+    </header>
+
+    <div class="row">
+      <div class="small-12 large-8 columns">
+
+		<section id="registration_page">
+		<!--content of the registration page-->
+			<h3>User registration page</h3>
+			<p>Please fill in the appropriate form to register:</p>
+			<form action="registration_form.php" method="post" enctype="multipart/form-data">
+                <div class="group">
+				<input class="googleInput" type="text" id="user_name" required/>
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <span id="user_result"></span>
+                <label class="googleLabel" for="user_name">User name</label>
+                </div>
+                <div class="group">    
+				<input  class="googleInput" type="password" name="password" id="password" required/>
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label class="googleLabel"  for="password">Password</label>
+                </div>      
+                <div class="group">    
+				<input  class="googleInput" type="text" name="business_name" id="business_name" required/>
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label class="googleLabel" for="business_name">Business name</label>
+                </div>      
+                <div class="group">    
+				<input  class="googleInput" type="email" name="user_email" id="user_email" required/>
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label class="googleLabel" for="user_email">Email Address</label>
+                </div>      
+                <div class="group">    
+				<input  class="googleInput" type="text" name="user_phone" id="user_phone" required/>
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label class="googleLabel" for="user_phone">User Phone Number</label>
+                </div>      
+                <div class="group">    
+				<input  class="googleInput" type="text" name="business_phone" id="business_phone" required/>
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label class="googleLabel" for="business_phone">Business Phone Number</label>
+                </div>      
+                <div class="group">    
+				<input  class="googleInput" type="text" name="business_address" id="business_address" required> 
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label class="googleLabel" for="business_address">Business Address</label>
+                </div>   
+                    
+				<label for="business_type">Business Type:</label>
+					<select name="business_type">
+						<option value="restaurant">Restaurant</option>
+						<option value="bar">Bar</option>
+						<option value="cafe">Cafe</option>
+					</select>
+				
+				 <br />
+					
+					<label for="file">Image displayed for your business:</label>
+					<input type="file" name="file" id="file" />
+					<br />
+					<p class="spec">Please choose a jpg, gif or png image whose size is inferior to 400 KB</p>
+
+
+				<input type="submit" class= "button" value="Register now" />
+				<br />
+				<a href="index.html">Back</a>
+			</form>
+		</section>
+
+		</div>
+		</div>
+    <footer>
+        <p id="footer"><i class="fa fa-copyright"></i>YUMdeals 2017</p>
+    </footer>
+		
+	
+
+
+  </body>
+</html>
+

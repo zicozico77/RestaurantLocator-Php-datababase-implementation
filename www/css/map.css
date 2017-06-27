@@ -1,0 +1,19 @@
+
+#map {
+        height: 80%;
+        width: 80%;
+}
+
+@media screen and (max-width: 768px) {
+    #map {
+        height: 80%;
+        width: 100%;
+    }
+}
+
+
+
+html, body {
+        height: 100%;
+        padding: 0;
+}

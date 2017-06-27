@@ -1,0 +1,105 @@
+/* code adapted from https://codepen.io/sevilayha/pen/IdGKH */
+/* form starting stylings ------------------------------- */
+.group 			  { 
+  position:relative; 
+  margin-bottom:45px; 
+}
+.googleInput 				{
+  font-size:1.5em;
+  padding:10px 10px 10px 5px;
+  display:block;
+  width:300px;
+  border:none;
+  box-shadow: none;
+  border-bottom:1px solid #757575;
+}
+.googleInput:focus 		{
+    background-color: #ffda6d;
+    outline:none; 
+    box-shadow: none;
+    border:none;
+    font-size:1.5em;
+    
+}
+
+/* .googleLabel ======================================= */
+.googleLabel 				 {
+  color:#999; 
+  font-size:18px;
+  font-weight:normal;
+  position:absolute;
+  pointer-events:none;
+  left:5px;
+  top:10px;
+  transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;
+}
+
+/* active state */
+.googleInput:focus ~ .googleLabel, .googleInput:valid ~ .googleLabel 		{
+  top:-20px;
+  font-size:16px;
+  color:#cf0029;
+}
+
+/* BOTTOM BARS ================================= */
+.bar 	{ position:relative; display:block; width:300px; }
+.bar:before, .bar:after 	{
+  content:'';
+  height:2px; 
+  width:0;
+  bottom:1px; 
+  position:absolute;
+  background:#cf0029; 
+  transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;
+}
+.bar:before {
+  left:50%;
+}
+.bar:after {
+  right:50%; 
+}
+
+/* active state */
+.googleInput:focus ~ .bar:before, .googleInput:focus ~ .bar:after {
+  width:50%;
+}
+
+/* HIGHLIGHTER ================================== */
+.highlight {
+  position:absolute;
+  height:30%; 
+  width:100px; 
+  top:10%; 
+  left:0;
+  pointer-events:none;
+  opacity:0.5;
+}
+
+/* active state */
+.googleInput:focus ~ .highlight {
+  -webkit-animation:InputHighlighter 0.3s ease;
+  -moz-animation:InputHighlighter 0.3s ease;
+  animation:InputHighlighter 0.3s ease;
+}
+
+/* ANIMATIONS ================ */
+@-webkit-keyframes InputHighlighter {
+	from { background:#cf0029; }
+  to 	{ width:0; background:transparent; }
+}
+@-moz-keyframes InputHighlighter {
+	from { background:#cf0029; }
+  to 	{ width:0; background:transparent; }
+}
+@keyframes InputHighlighter {
+	from { background:#cf0029; }
+  to 	{ width:0; background:transparent; }
+}
+
+.googleInput {
+    background-color: #ffda6d;
+}

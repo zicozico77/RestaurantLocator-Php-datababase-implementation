@@ -1,0 +1,162 @@
+/* for the index page */
+.search{
+	margin-top: 60px;
+}
+
+.search-text{
+	padding:0;
+}
+.search button{
+	padding-left: 4px;
+	margin: 0;
+}
+
+#ads-table td{
+	width: 200px;
+	height: 200px;
+	background-size: contain;
+}
+
+
+/* for the account page */
+#responds{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+#responds li {
+	list-style: none;
+	padding: 15px;
+	margin-bottom: 5px;
+	border-radius: 5px;
+	max-width: 400px;
+	font-size: 13px;
+}
+#responds li.sel {
+	background: rgb(255, 221, 221);
+}
+.del_wrapper{float:right;}
+
+#heading1 {
+    color: #cf0029;
+    float: left;
+    font-family: 'Rammetto One', cursive;
+    font-size: 3em;
+}
+
+#heading2 {
+    color: #3591d0;
+    float:left;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+
+}
+
+h2 {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 5em;
+}
+
+.nav {
+	font-size : 2em;
+}
+
+
+h3 {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 3em;
+}
+
+
+body {
+    background: #ffda6d;
+    position: inline-block;
+}
+
+.focus {
+    border: 1em solid #cf0029;
+    outline: none;
+}
+.blur {
+    border: 1em solid #cf0029;
+    outline: none;
+}
+
+button {
+    float: left;
+    position:inherit;
+    display: inline;
+}
+
+.spec {
+	font-style: italic;
+	font-size: 0.7em;
+}
+
+header {
+    z-index: 99;
+    position: fixed;
+    left: 0;
+    width: 100%;
+    top: 0;
+    background-color:rgba(255,255,255, 0.8);
+    height: 4em;
+}
+
+header {
+        font-size: 1.2em;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    margin-right: 1%;
+    padding: 0;    
+}
+
+/* Float the list items side by side */
+li {
+    float: right;
+    
+}
+
+/* Style the links inside the list items */
+li a {
+    display: inline-block;
+    color: rgba(255,255,255);
+    text-align: center;
+    padding: 0.6em 0.8em;
+    text-decoration: none;
+    transition: 0.3s;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 1.5em;
+
+}
+
+#socialGap {
+    padding: 0.6em 0.35em;
+    color: #ababab;
+    cursor: pointer;
+}
+
+li a:hover, .dropdown:hover .dropbtn, #socialGap:hover {
+    color: #3591d0;
+    text-decoration: none;
+}
+
+li.a, .dropbtn {
+    color: #7f7f7f;
+    cursor: pointer;
+}
+
+#deals {
+    color: #cf0029;
+    text-align: center;
+    padding-top: 1em;
+}
+
+.mainsearch {
+
+    height: 5em;
+    border: 1em solid #cf0029;
+
+}
